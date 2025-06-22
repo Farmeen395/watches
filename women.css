@@ -1,0 +1,127 @@
+.text-pink {
+  color: #d63384;
+}
+
+.btn-pink {
+  background-color: #e2368c;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #c74081;
+  transform: scale(1.05);
+}
+
+.watch-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.watch-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.watch-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.watch-image:hover {
+  transform: scale(1.03);
+}
+
+/* Animations */
+.animate-left {
+  animation: fadeLeft 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.animate-right {
+  animation: fadeRight 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .watch-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .watch-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .btn-pink {
+    display: block;
+    margin: auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .watch-title {
+    font-size: 1.6rem;
+  }
+
+  .watch-description {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .watch-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .watch-title {
+    font-size: 1.4rem;
+  }
+
+  .watch-description {
+    font-size: 0.9rem;
+  }
+
+  .btn-pink {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

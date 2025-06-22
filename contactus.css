@@ -1,0 +1,118 @@
+.contact-us-section {
+  background: linear-gradient(135deg, #fefefe, #f4f4f4);
+  padding: 60px 20px;
+}
+
+.contact-us-section h2 {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.contact-us-section p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.contact-us-section .form-control {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  font-size: 15px;
+}
+
+.contact-us-section .btn {
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-us-section .btn:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}
+
+/* Animation */
+.animate-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideInLeft 1s forwards;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideInRight 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .contact-us-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-us-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .contact-us-section p {
+    text-align: center;
+  }
+
+  .contact-us-section form {
+    text-align: center;
+  }
+
+  .animate-left,
+  .animate-right {
+    animation: fadeIn 1s forwards;
+    transform: translateY(20px);
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-section {
+    padding: 40px 10px;
+  }
+
+  .contact-us-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-us-section .btn {
+    width: 100%;
+  }
+
+  .contact-us-section img {
+    width: 100%;
+    height: auto;
+  }
+}

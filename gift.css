@@ -1,0 +1,131 @@
+.gift-section {
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  animation: fadeInDown 1s ease-out;
+}
+
+.gift-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease forwards;
+}
+
+.gift-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gift-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gift-card:hover .gift-img img {
+  transform: scale(1.05);
+}
+
+.gift-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.gift-content h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gift-content p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.gift-buttons .btn {
+  margin: 0 5px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gift-img img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .gift-content p {
+    font-size: 0.9rem;
+  }
+}
+.text-pink {
+  color: #345e40;
+}
+
+.btn-pink {
+  background-color: #32754c;
+  color: #fff;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #b52d71;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .watch-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .watch-description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .text-section,
+  .image-section {
+    text-align: center;
+  }
+
+  .btn-pink {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
